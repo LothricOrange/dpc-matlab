@@ -15,18 +15,16 @@ classdef DPCUtils
  
             SnnList = zeros(row, row);
             wList = zeros(row, row);
-            for i = 1 : row
-                for j = 1 : row
-                     if (i == j) 
-                        continue;
-                    end
+            for i = 1 : row - 1
+                for j = i + 1 : row
                     tmpList = intersect(KnnList(i, :),KnnList(j, :));
                     SnnList(i,j) = length(tmpList);
                     tmp = -distMatrix(i,j) * distMatrix(i,j) + (SnnList(i,j) / K);
                     wList(i,j) = exp(tmp);
                 end
             end
-
+            wList = wList + wList'; %得到对称矩阵
+            
             aveList = zeros(1, row);
             for i = 1 : row
                 tmp = 0;
@@ -53,6 +51,7 @@ classdef DPCUtils
                 end
                 rho(i) = sum;
             end
+            a = 1;
         end
         
         
@@ -98,6 +97,82 @@ classdef DPCUtils
                     end
                 end
             end
-        end    
+        end
+        %% 分配策略
+        function [clusterType] = doAllocation(wList, clusterType)
+            wCloneList = wList;
+            row = size(clusterType, 2);
+            while 1
+                Sim = wCloneList;
+                c=find(clusterType>0);
+                d=1:row;
+                d=setdiff(d,c);
+                Sim(:,d)=zeros(row,size(d,2));
+                if max(max(Sim))==0
+                    break
+                end
+                while 1
+                    if max(max(Sim))==0
+                        break
+                    end
+                    [a,b]=find(Sim==max(max(Sim)));%找到相似度最大的点
+                    if clusterType(a(1))<0  %表示该点没有被分配
+                        clusterType(a(1))=clusterType(b(1));%将该点分为231的簇即类簇2
+                        wCloneList(a(1),:)=zeros(1,row);%该点分配完之后将该点行的相似度变为0
+                        break
+                    else
+                        wCloneList(a(1),b(1))=0;
+                        Sim(a(1),b(1))=0;
+                    end
+                end
+                if min(clusterType)==1  %判断所有点是否都分配完成
+                    break
+                end
+                if max(max(wCloneList))==0
+                    break
+                end
+            end
+        end
+        %% TODO
+        function [clusterType] = doAllocation2(wList, clusterType)
+            row = size(clusterType, 2);
+            indexArr = zeros(row, row);
+            wListSortArr = zeros(row, row);
+            for i = 1 : row
+                [wListSortArr(i, :), indexArr(i, :)] = sort(wList(i, :), 'descend');
+            end
+            
+            %map = containers.Map;
+            map = java.util.Hashtable;
+            for i = 1 : row
+                if (clusterType(i) ~= -1)
+                    map.put(i, indexArr(i, :));
+                end
+            end
+
+            while (map.size() ~= row)
+                keySet = map.keys;
+                maxSim = 0;
+                while (keySet.hasNext)
+                    key = keySet.nextElement;
+                    value = map.get(key);
+                    while (map.containsKey(value(1))) 
+                        value(1) = [];
+                    end
+                   
+                    
+                    if (value(1) == 0 || size(value, 1) == 0) 
+                        return
+                    end
+                    if (wList(key, value(1)) > maxSim)
+                        father = key;
+                        doProcess = value(1);
+                    end
+                end
+                clusterType(doProcess) = clusterType(father);
+                map.put(doProcess, indexArr(doProcess, :));
+            end
+        end
+       
     end
 end

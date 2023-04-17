@@ -59,25 +59,37 @@ function [evaluation] = MyDPC(originData, clusterNum, K, dc, isDraw)
         clusterType(clusterCenter(i)) = i;
     end
     
-    indexArr = zeros(row, row);
-    for i = 1 : row
-        [~, indexArr(i, :)] = sort(wList(i, :), 'descend');
-    end
     
-     
     
+    %-----------------------------------------------------------
+    clusterType = DPCUtils.doAllocation(wList, clusterType);
+    
+%     processedSample = clusterCenter;
+%     for i = 1 : row
+%         if (clusterType(i) == -1)
+%             for j = 1 : row
+%                 fatherIndex = indexArr(i, j);
+%                 if ismember(fatherIndex, processedSample) == 1
+%                     break;
+%                 end
+%             end
+%             clusterType(i) = clusterType(fatherIndex);
+%             processedSample = [processedSample,i];
+%         end
+%     end
 
-    processedSample = clusterCenter;
-     % 为其他样本染色
-     for i = 1 : NCLUSTER
-         
-          clusterType()
-     end
+%     processedSample = clusterCenter;
+%      % 为其他样本染色
+%      for i = 1 : NCLUSTER
+%            indexForPS = processedSample(i);
+%            indexForUnPS= indexArr(indexForPS, 1);
+%           clusterType(indexForUnPS) = clusterType(indexForPS);
+%           
+%      end
         
     
     for i = 1 : row  
       if (clusterType(ordrho(i)) == -1)  
-         %[sortwList(ordrho(i), :), indexArr] = sort(wList(ordrho(i), :));
         clusterType(ordrho(i)) = clusterType(nneigh(ordrho(i)));  
       end  
     end
