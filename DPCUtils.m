@@ -59,12 +59,14 @@ classdef DPCUtils
         function [rho] = getGaussianKernel(distMatrix, dc)
             [row,~] = size(distMatrix);
             rho =  zeros(1, row);
-            for i = 1 : row - 1  
-               for j = i + 1 : row  
+            for i = 1 : row 
+               for j = 1 : row  
+                   if (i == j) 
+                       continue
+                   end
                   tmp = distMatrix(i,j) / dc;
                   augend = exp(-tmp * tmp);
-                  rho(i) = rho(i) + augend;  
-                  rho(j) = rho(j) + augend;  
+                  rho(i) = rho(i) + augend;   
                end  
             end
         end
