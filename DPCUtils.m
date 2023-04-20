@@ -117,10 +117,10 @@ classdef DPCUtils
                     if max(max(Sim))==0
                         break
                     end
-                    [a,b]=find(Sim==max(max(Sim)));%找到相似度最大的点
-                    if clusterType(a(1))<0  %表示该点没有被分配
-                        clusterType(a(1))=clusterType(b(1));%将该点分为231的簇即类簇2
-                        wCloneList(a(1),:)=zeros(1,row);%该点分配完之后将该点行的相似度变为0
+                    [a,b]=find(Sim==max(max(Sim)));
+                    if clusterType(a(1))<0
+                        clusterType(a(1))=clusterType(b(1));
+                        wCloneList(a(1),:)=zeros(1,row);
                         break
                     else
                         wCloneList(a(1),b(1))=0;
