@@ -19,11 +19,41 @@ classdef DPCUtils
                 for j = i + 1 : row
                     tmpList = intersect(KnnList(i, :),KnnList(j, :));
                     SnnList(i,j) = length(tmpList);
-                    tmp = -distMatrix(i,j) * distMatrix(i,j) + (SnnList(i,j) / K);
+                    tmp = (SnnList(i,j) / K) - (distMatrix(i,j) * distMatrix(i,j));
                     wList(i,j) = exp(tmp);
                 end
             end
             wList = wList + wList'; %得到对称矩阵
+            RnnList = zeros(1, row);
+            
+            for i = 1 : row
+                for j = 1 : row
+%                     if (i == j) 
+%                         continue;
+%                     end
+                    if (ismember(i, KnnList(j,:)))
+                        RnnList(i) = RnnList(i) + 1;
+                    end
+                end
+            end
+            
+            zList = zeros(row, row);
+            for i = 1 : row
+                for j = 1 : row
+                    if (i == j) 
+                         continue;
+                    end
+                     if (ismember(j, KnnList(i,:)))
+                         zList(i, j) = exp(-distMatrix(i, j)*distMatrix(i, j));
+                     else
+                         tmp = exp(-distMatrix(i, j));
+                         zList(i, j) = tmp / (tmp + 1);
+                     end
+                end
+            end
+            rho =  zeros(1, row);
+            
+            
             
             aveList = zeros(1, row);
             for i = 1 : row
@@ -41,16 +71,39 @@ classdef DPCUtils
                     if (i == j) 
                         continue;
                     end
-                    if (sortDist(i, K + 1) >= distMatrix(i, j))
+%                     if (sortDist(i, K + 1) >= distMatrix(i, j))
+%                         sum = wList(i, j) + sum;
+%                     
+%                         
+%                     end
+%                     if (aveList(i) >= distMatrix(i, j))
+%                             tmp = distMatrix(i, j) / (j - K);
+%                             sum = exp(- tmp * tmp) + sum;
+%                     end
+                    num1 = sortDist(i, K + 1) - distMatrix(i, j);
+                    num2 = aveList(i) - distMatrix(i, j);
+                    if (num1 > 0)
                         sum = wList(i, j) + sum;
                     end
-                    if (aveList(i) >= distMatrix(i, j))
-                        tmp = distMatrix(i, j) / (j - K);
+                    if (num2 > 0)
+                        tmp = distMatrix(i, j) / aveList(i);
                         sum = exp(- tmp * tmp) + sum;
                     end
                 end
                 rho(i) = sum;
             end
+%             rho =  zeros(1, row);
+%             for i = 1 : row 
+%                for j = 1 : row  
+%                    if (i == j) 
+%                        continue
+%                    end
+%                   tmp = distMatrix(i,j) / aveList(i);
+%                   augend = exp(-tmp * tmp);
+%                   rho(i) = rho(i) + augend;   
+%                end  
+%             end
+            
             a = 1;
         end
         
@@ -176,5 +229,77 @@ classdef DPCUtils
             end
         end
        
+        
+        %% 局部密度2
+        function [rho, wList] = getLocalDensity2(distMatrix, K)
+            [row,~]=size(distMatrix);
+            KnnList = zeros(row, K); %存index
+            sortDist = zeros(row, row);
+
+            for i = 1 : row
+                [sortDist(i, :),indexArr] = sort(distMatrix(i, :));
+                for j = 1 : K  
+                    KnnList(i, j) = indexArr(j + 1);
+                end
+            end
+ 
+            SnnList = zeros(row, row);
+            wList = zeros(row, row);
+            for i = 1 : row - 1
+                for j = i + 1 : row
+                    tmpList = intersect(KnnList(i, :),KnnList(j, :));
+                    SnnList(i,j) = length(tmpList);
+%                    tmp = (SnnList(i,j) / K) - (distMatrix(i,j) * distMatrix(i,j));
+                    tmp = (SnnList(i,j) / K) - distMatrix(i,j);
+                    wList(i,j) = exp(tmp);
+                end
+            end
+            wList = wList + wList'; %得到对称矩阵
+            RnnList = zeros(1, row);
+            
+            for i = 1 : row
+                for j = 1 : row
+                    if (ismember(i, KnnList(j,:)))
+                        RnnList(i) = RnnList(i) + 1;
+                    end
+                end
+            end
+            
+            aveList = zeros(1, row);
+            for i = 1 : row
+                tmp = 0;
+                for j = K + 2 : row
+                    tmp = tmp + sortDist(i,j);
+                end
+                aveList(i) = tmp / (row - K);
+            end
+            
+            zList = zeros(row, row);
+            for i = 1 : row
+                for j = 1 : row
+                    if (i == j) 
+                         continue;
+                    end
+                     if (ismember(j, KnnList(i,:)))
+                         % zList(i, j) = exp(-distMatrix(i, j)*distMatrix(i, j));
+                         zList(i, j) = exp(-distMatrix(i, j));
+                     else
+                          tmp = exp(-distMatrix(i, j));
+%                          zList(i, j) = tmp / (tmp + 1);
+                            zList(i, j) = tmp / (aveList(i) + 1);
+%                            zList(i, j) = tmp * aveList(i);
+                     end
+                end
+            end
+            rho =  zeros(1, row);
+            for i = 1 : row
+                rho(i) = RnnList(i) + (sum(zList(i,:)) / K);
+            end
+            
+            
+            
+            
+            a = 1;
+        end
     end
 end

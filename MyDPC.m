@@ -16,14 +16,14 @@ function [evaluation] = MyDPC(originData, clusterNum, K, dc, isDraw)
         dc = DPCUtils.getDeterminateRadius(ascOrderDistanceArr, dc);
         rho = DPCUtils.getGaussianKernel(distMatrix, dc);
     else
-        [rho, wList] = DPCUtils.getLocalDensity(distMatrix, K);
+        [rho, wList] = DPCUtils.getLocalDensity2(distMatrix, K);
     end
     
     %相对距离
     maxDistance = ascOrderDistanceArr(end);
     [~, ordrho] = sort(rho,'descend');  
-    delta(ordrho(1)) = -1.; 
-    nneigh(ordrho(1)) = 0; 
+%     delta(ordrho(1)) = -1.; 
+%     nneigh(ordrho(1)) = 0; 
 
     for i = 2 : row  
        delta(ordrho(i)) = maxDistance;
@@ -62,8 +62,9 @@ function [evaluation] = MyDPC(originData, clusterNum, K, dc, isDraw)
     
     
     %-----------------------------------------------------------
-    clusterType = DPCUtils.doAllocation(wList, clusterType);
-    
+    if dc <= 0
+        clusterType = DPCUtils.doAllocation(wList, clusterType);
+    end
 %     processedSample = clusterCenter;
 %     for i = 1 : row
 %         if (clusterType(i) == -1)

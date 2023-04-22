@@ -19,7 +19,7 @@ function  ShowCluster(data)
 
     end
     % hold off
-    %title(ctitle);
+    % title("±ê¼Ç");
 
 end
 
