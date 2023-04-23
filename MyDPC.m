@@ -16,7 +16,7 @@ function [evaluation] = MyDPC(originData, clusterNum, K, dc, isDraw)
         dc = DPCUtils.getDeterminateRadius(ascOrderDistanceArr, dc);
         rho = DPCUtils.getGaussianKernel(distMatrix, dc);
     else
-        [rho, wList] = DPCUtils.getLocalDensity2(distMatrix, K);
+        [rho, wList, RnnList, SnnList, KnnList] = DPCUtils.getLocalDensity2(distMatrix, K);
     end
     
     %相对距离
@@ -59,12 +59,58 @@ function [evaluation] = MyDPC(originData, clusterNum, K, dc, isDraw)
         clusterType(clusterCenter(i)) = i;
     end
     
+    queue = zeros(0);
+    for i = 1 : NCLUSTER
+        queue(end + 1) = clusterCenter(i);
+    end
+    while (size(queue) ~= 0)
+        xi = queue(1);
+        for i = 1 : K
+            x = KnnList(xi, i);
+            if (clusterType(x) == -1)
+                if (SnnList(xi, x) >= (K/2) && RnnList(x) >= K)
+                    clusterType(x) = clusterType(xi);
+                    queue(end + 1) = x;
+                end
+            end
+        end
+        queue(1) = [];
+    end
+    
+    p = zeros(0);
+    for i = 1 : row
+        if (clusterType(i) == -1)
+            p(end + 1) = i;
+        end
+    end
+    [~,HangNum] = size(p);
+    A = zeros(HangNum, NCLUSTER);
+    for i = 1 : HangNum
+        for j = 1 : K
+            if (clusterType(KnnList(p(i), j)) ~= -1)
+                A(i,clusterType(KnnList(p(i), j))) = A(i,clusterType(KnnList(p(i), j))) + 1;
+            end
+        end
+    end
+    for i = 1 : HangNum
+        maxValue = -1;
+        type = 0;
+        for j = 1 : NCLUSTER
+            if (A(i,j) > maxValue)
+                maxValue = A(i,j);
+                type = j;
+            end
+        end
+        clusterType(p(i)) = type;
+    end
+    
+    wait = 0;
     
     
     %-----------------------------------------------------------
-    if dc <= 0
-        clusterType = DPCUtils.doAllocation(wList, clusterType);
-    end
+%     if dc <= 0
+%         clusterType = DPCUtils.doAllocation(wList, clusterType);
+%     end
 %     processedSample = clusterCenter;
 %     for i = 1 : row
 %         if (clusterType(i) == -1)

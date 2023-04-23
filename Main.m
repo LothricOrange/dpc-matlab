@@ -12,6 +12,11 @@ evaluation = MyDPC(originData, 2, 27, -1, true);
 disp(evaluation);
 
 originData = load('.\dataset\shape\flame.txt');
+evaluation = MyDPC(originData, 2, 16, -1, true);
+disp(evaluation);
+
+
+originData = load('.\dataset\shape\flame.txt');
 evaluation = MyDPC(originData, 2, 11, 2.7, true);
 disp(evaluation);
 
@@ -83,12 +88,12 @@ disp(evaluation);
 %% 调参
 %max = 0;
 change = 0;
-originData = load('.\dataset\newDataSet\cmc.txt');
+originData = load('.\dataset\shape\flame.txt');
 [Arg, ~] = size(originData);
 tmp = Arg / 2;
 evArr = zeros(1, Arg);
 for i = 2 : Arg - 1
-    evaluation = MyDPC(originData, 3, i, -1, false);
+    evaluation = MyDPC(originData, 2, i, -1, false);
     sum = evaluation(1) + evaluation(2) + evaluation(3);
     evArr(i) = sum;
 %     if (sum >= max)

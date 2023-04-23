@@ -231,7 +231,7 @@ classdef DPCUtils
        
         
         %% 局部密度2
-        function [rho, wList] = getLocalDensity2(distMatrix, K)
+        function [rho, wList, RnnList, SnnList, KnnList] = getLocalDensity2(distMatrix, K)
             [row,~]=size(distMatrix);
             KnnList = zeros(row, K); %存index
             sortDist = zeros(row, row);
@@ -256,6 +256,7 @@ classdef DPCUtils
             end
             wList = wList + wList'; %得到对称矩阵
             RnnList = zeros(1, row);
+            SnnList = SnnList + SnnList';
             
             for i = 1 : row
                 for j = 1 : row
