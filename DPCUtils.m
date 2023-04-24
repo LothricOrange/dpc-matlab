@@ -228,8 +228,54 @@ classdef DPCUtils
                 map.put(doProcess, indexArr(doProcess, :));
             end
         end
-       
-        
+       %% TODO
+        function [clusterType] = doAllocation3(clusterCenter, clusterType, KnnList, SnnList, RnnList, K, row)
+            queue = zeros(0);
+            [~,NCLUSTER] = size(clusterCenter);
+            for i = 1 : NCLUSTER
+                queue(end + 1) = clusterCenter(i);
+            end
+            while (size(queue) ~= 0)
+                xi = queue(1);
+                for i = 1 : K
+                    x = KnnList(xi, i);
+                    if (clusterType(x) == -1)
+                        if (SnnList(xi, x) >= (K/2) && RnnList(x) >= K)
+                            clusterType(x) = clusterType(xi);
+                            queue(end + 1) = x;
+                        end
+                    end
+                end
+                queue(1) = [];
+            end
+
+            p = zeros(0);
+            for i = 1 : row
+                if (clusterType(i) == -1)
+                    p(end + 1) = i;
+                end
+            end
+            [~,HangNum] = size(p);
+            A = zeros(HangNum, NCLUSTER);
+            for i = 1 : HangNum
+                for j = 1 : K
+                    if (clusterType(KnnList(p(i), j)) ~= -1)
+                        A(i,clusterType(KnnList(p(i), j))) = A(i,clusterType(KnnList(p(i), j))) + 1;
+                    end
+                end
+            end
+            for i = 1 : HangNum
+                maxValue = -1;
+                type = 0;
+                for j = 1 : NCLUSTER
+                    if (A(i,j) > maxValue)
+                        maxValue = A(i,j);
+                        type = j;
+                    end
+                end
+                clusterType(p(i)) = type;
+            end
+        end
         %% 局部密度2
         function [rho, wList, RnnList, SnnList, KnnList] = getLocalDensity2(distMatrix, K)
             [row,~]=size(distMatrix);
