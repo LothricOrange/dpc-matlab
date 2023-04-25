@@ -2,6 +2,7 @@
 % K -- k近邻
 % dc -- 半径
 % isDraw -- 是否画图
+
 function [evaluation] = MyDPC(originData, K, dc, isDraw) 
     missTypeData = originData(:, 1:end-1); 
     ndhData = libsvmscale(missTypeData, 0, 1); 
@@ -15,7 +16,7 @@ function [evaluation] = MyDPC(originData, K, dc, isDraw)
     %如果传了dc，局部密度的计算用 高斯核/截断核
     %这里开始测试效率高一些
     if (dc > 0) 
-        %dc = DPCUtils.getDeterminateRadius(ascOrderDistanceArr, dc);
+        dc = DPCUtils.getDeterminateRadius(ascOrderDistanceArr, dc);
         rho = DPCUtils.getGaussianKernel(distMatrix, dc);
         %rho = DPCUtils.getCutOffKernel(distMatrix, dc);
     else
@@ -66,7 +67,7 @@ function [evaluation] = MyDPC(originData, K, dc, isDraw)
     
     %wait = 0;
     
-    
+    %clusterType = DPCUtils.doAllocation3(clusterCenter, clusterType, KnnList, SnnList, RnnList, K, row);
     %-----------------------------------------------------------
     if dc <= 0
         clusterType = DPCUtils.doAllocation(wList, clusterType);

@@ -348,5 +348,12 @@ classdef DPCUtils
             
             a = 1;
         end
+        %% ....
+        function [evaluation] = MyDPC(originData, K)
+            evaluation = MyDPC(originData, K, -1, true);
+        end
+        function [evaluation] = DPC(originData, dc)
+            evaluation = MyDPC(originData, -1, dc, true);
+        end
     end
 end

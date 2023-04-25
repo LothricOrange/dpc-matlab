@@ -27,84 +27,165 @@ K = shapePathAndK(6,2);
 evaluation = MyDPC(originData, str2double(K), -1, true);
 disp(evaluation);
 
+originData = load('.\dataset\shape\flame.txt');
+evaluation = DPCUtils.MyDPC(originData, 27);
+disp(evaluation);
+
 
 originData = load('.\dataset\shape\flame.txt');
-evaluation = MyDPC(originData, 11, 2.7, true);
+evaluation = DPCUtils.DPC(originData, 2.7);
 disp(evaluation);
 
 originData = load('.\dataset\shape\jain.txt');
-evaluation = MyDPC(originData, 22, -1, true);
+evaluation = DPCUtils.MyDPC(originData, 22);
 disp(evaluation);
 
 originData = load('.\dataset\shape\R15.txt');
-evaluation = MyDPC(originData, 17, -1, true);
+evaluation =DPCUtils. MyDPC(originData, 17);
 disp(evaluation);
 
 originData = load('.\dataset\shape\seeds_dataset.txt');
-evaluation = MyDPC(originData, 7, -1, true);
+evaluation = DPCUtils.MyDPC(originData, 7);
 disp(evaluation);
 
-originData = load('.\dataset\shape\Twomoons.txt');
-evaluation = MyDPC(originData, 2, -1, true);
-disp(evaluation);
+
 
 originData = load('.\dataset\shape\userKnowledge.txt');
-evaluation = MyDPC(originData, 12, -1, true);
+evaluation = DPCUtils.MyDPC(originData, 12);
 disp(evaluation);
 
 originData = load('.\dataset\newDataSet\Aggregation.txt');
-evaluation = MyDPC(originData, 11, -1, true);
+evaluation = DPCUtils.MyDPC(originData, 11);
 disp(evaluation);
 %% 流型数据集
+%Twomoons
+originData = load('.\dataset\shape\Twomoons.txt');
+evaluation = DPCUtils.MyDPC(originData, 2);
+disp(evaluation);
+%ring
+originData = load('.\dataset\newDataSet\ring.txt');
+evaluation = DPCUtils.MyDPC(originData, 6);
+disp(evaluation);
+%Compound
+originData = load('.\dataset\newDataSet\Compound.txt');
+evaluation = DPCUtils.MyDPC(originData, 9);
+disp(evaluation);
+%cth3
+originData = load('.\dataset\newDataSet\cth3.txt');
+evaluation = DPCUtils.MyDPC(originData, 19);
+disp(evaluation);
 % Lineblobs
 originData = load('.\dataset\newDataSet\Lineblobs.txt');
-evaluation = MyDPC(originData, 5, -1, true);
+evaluation = DPCUtils.MyDPC(originData, 5);
 disp(evaluation);
 % Pathbased
 originData = load('.\dataset\newDataSet\pathbased.txt');
-evaluation = MyDPC(originData, 17, -1, true);
+evaluation = DPCUtils.MyDPC(originData, 17);
 disp(evaluation);
 % Spiral
 originData = load('.\dataset\newDataSet\spiral.txt');
-evaluation = MyDPC(originData, 3, -1, true);
+evaluation = DPCUtils.MyDPC(originData, 3);
 disp(evaluation);
 % Jain
 originData = load('.\dataset\newDataSet\jain.txt');
-evaluation = MyDPC(originData, 11, -1, true);
+evaluation = DPCUtils.MyDPC(originData, 11);
 disp(evaluation);
 % Sticks
 originData = load('.\dataset\newDataSet\Sticks.txt');
-evaluation = MyDPC(originData, 2, -1, true);
+evaluation = DPCUtils.MyDPC(originData, 2);
 disp(evaluation);
 % Db
 originData = load('.\dataset\newDataSet\db13.txt');
-evaluation = MyDPC(originData, 13, -1, true);
+evaluation = DPCUtils.MyDPC(originData, 13);
 disp(evaluation); % TODO
 % Cmc
 originData = load('.\dataset\newDataSet\cmc.txt');
-evaluation = MyDPC(originData, 2, -1, true);
+evaluation = DPCUtils.MyDPC(originData, 2);
 disp(evaluation);
 % Circle
 originData = load('.\dataset\newDataSet\circle3.txt');
-evaluation = MyDPC(originData, 19, -1, true);
+evaluation = DPCUtils.MyDPC(originData, 19);
 disp(evaluation);
 
 %% uci
 originData = load('.\dataset\uci\iris.txt');
-evaluation = MyDPC(originData, 7, -1, true);
+evaluation = DPCUtils.MyDPC(originData, 7);
 disp(evaluation);
 
 originData = load('.\dataset\uci\Wine.txt');
-evaluation = MyDPC(originData, 45, -1, true);
+evaluation = DPCUtils.MyDPC(originData, 32);
 disp(evaluation);
 
 originData = load('.\dataset\uci\Wdbc.txt');
-evaluation = MyDPC(originData, 41, -1, true);
+evaluation = DPCUtils.MyDPC(originData, 61);
 disp(evaluation);
+
+originData = load('.\dataset\uci\seeds_dataset.txt');
+evaluation = DPCUtils.MyDPC(originData, 7);
+disp(evaluation);
+
+
+
+originData = load('.\dataset\uci\Ionosphere.txt');
+evaluation = DPCUtils.MyDPC(originData, 32);
+disp(evaluation);
+
+originData = load('.\dataset\uci\Libras.txt');
+evaluation = DPCUtils.MyDPC(originData, 5);
+disp(evaluation);
+
+originData = load('.\dataset\uci\Ecoli.txt');
+evaluation = DPCUtils.MyDPC(originData, 20);
+disp(evaluation);
+
+originData = load('.\dataset\uci\dermatology.txt');
+evaluation = DPCUtils.MyDPC(originData, 7);
+disp(evaluation);
+
+originData = load('.\dataset\uci\Segmentation.txt');
+evaluation = DPCUtils.MyDPC(originData, 10);
+disp(evaluation);
+
+
+% '.\dataset\uci\Avila.txt'
+% '.\dataset\uci\balance-scale.txt'
+% '.\dataset\uci\ChlorineConcentration.txt'
+% '.\dataset\uci\default of credit card clients.txt'
+% '.\dataset\uci\dermatology.txt'
+% '.\dataset\uci\drivFace.txt'
+% '.\dataset\uci\Epileptic Seizure Recognition.txt'
+% '.\dataset\uci\FordA.txt'
+% '.\dataset\uci\FordB.txt'
+% '.\dataset\uci\Gas Sensor Array Drift.txt'
+% '.\dataset\uci\Gas Sensor Array Drift Dataset at Different Concentrations.txt'
+% '.\dataset\uci\Internet Advertisements.txt'
+% '.\dataset\uci\Ionosphere.txt'
+% '.\dataset\uci\iris.txt'
+% '.\dataset\uci\Libras.txt'
+% '.\dataset\uci\Mice Protein Expression.txt'
+% '.\dataset\uci\musk.txt'
+% '.\dataset\uci\Online Shoppers Purchasing Intention.txt'
+% '.\dataset\uci\parkinsons1.txt'
+% '.\dataset\uci\pendigits.txt'
+% '.\dataset\uci\pendigits.txt'
+% '.\dataset\uci\RingNorm.txt'
+% '.\dataset\uci\secom.txt'
+% '.\dataset\uci\seeds_dataset.txt'
+% '.\dataset\uci\Segmentation.txt'
+% '.\dataset\uci\Sensorless_drive_diagnosis.txt'
+% '.\dataset\uci\shuttle.txt'
+% '.\dataset\uci\UWaveGestureLibraryAll.txt'
+% '.\dataset\uci\Wafer.txt'
+% '.\dataset\uci\Wdbc.txt'
+% '.\dataset\uci\Wine.txt'
 %% 调参
 %max = 0;
-change = 0;
-originData = load('.\dataset\newDataSet\Aggregation.txt');
+clc;
+clear;
+close all;
+
+% change = 0;
+originData = load('.\dataset\uci\Ecoli.txt');
 [Arg, ~] = size(originData);
 tmp = Arg / 2;
 evArr = zeros(1, Arg);
@@ -123,7 +204,7 @@ maxN = max(evArr);
 %% 调参
 %max = 0;
 change = 0;
-originData = load('.\dataset\newDataSet\cmc.txt');
+originData = load('.\dataset\newDataSet\Twomoons.txt');
 [Arg, ~] = size(originData);
 dc = 0.1;
 for i = 1 : 100
