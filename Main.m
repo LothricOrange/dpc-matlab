@@ -44,10 +44,21 @@ originData = load('.\dataset\shape\R15.txt');
 evaluation =DPCUtils. MyDPC(originData, 17);
 disp(evaluation);
 
+originData = load('.\dataset\shape\R15.txt');
+evaluation =DPCUtils.DPC(originData, 0.6);
+disp(evaluation);
+
 originData = load('.\dataset\shape\seeds_dataset.txt');
 evaluation = DPCUtils.MyDPC(originData, 7);
 disp(evaluation);
 
+originData = load('.\dataset\shape\D31.txt');
+evaluation = DPCUtils.DPC(originData, 1.0);
+disp(evaluation);
+
+originData = load('.\dataset\shape\D31.txt');
+evaluation = DPCUtils.MyDPC(originData, 7);
+disp(evaluation);
 
 
 originData = load('.\dataset\shape\userKnowledge.txt');
@@ -62,6 +73,9 @@ disp(evaluation);
 originData = load('.\dataset\shape\Twomoons.txt');
 evaluation = DPCUtils.MyDPC(originData, 2);
 disp(evaluation);
+
+
+
 %ring
 originData = load('.\dataset\newDataSet\ring.txt');
 evaluation = DPCUtils.MyDPC(originData, 6);
@@ -90,6 +104,10 @@ disp(evaluation);
 originData = load('.\dataset\newDataSet\jain.txt');
 evaluation = DPCUtils.MyDPC(originData, 11);
 disp(evaluation);
+originData = load('.\dataset\newDataSet\jain.txt');
+evaluation = DPCUtils.DPC(originData, 0.8);
+disp(evaluation);
+
 % Sticks
 originData = load('.\dataset\newDataSet\Sticks.txt');
 evaluation = DPCUtils.MyDPC(originData, 2);
@@ -98,13 +116,26 @@ disp(evaluation);
 originData = load('.\dataset\newDataSet\db13.txt');
 evaluation = DPCUtils.MyDPC(originData, 13);
 disp(evaluation); % TODO
+
+originData = load('.\dataset\newDataSet\db13.txt');
+evaluation = DPCUtils.DPC(originData, 4);
+disp(evaluation); % TODO
 % Cmc
 originData = load('.\dataset\newDataSet\cmc.txt');
 evaluation = DPCUtils.MyDPC(originData, 2);
 disp(evaluation);
+
+originData = load('.\dataset\newDataSet\cmc.txt');
+evaluation = DPCUtils.DPC(originData, 5);
+disp(evaluation);
+
 % Circle
 originData = load('.\dataset\newDataSet\circle3.txt');
 evaluation = DPCUtils.MyDPC(originData, 19);
+disp(evaluation);
+
+originData = load('.\dataset\newDataSet\circle3.txt');
+evaluation = DPCUtils.DPC(originData, 3.3);
 disp(evaluation);
 
 %% uci
@@ -143,6 +174,14 @@ evaluation = DPCUtils.MyDPC(originData, 7);
 disp(evaluation);
 
 originData = load('.\dataset\uci\Segmentation.txt');
+evaluation = DPCUtils.MyDPC(originData, 10);
+disp(evaluation);
+
+originData = load('.\dataset\shape\R15.txt');
+evaluation = DPCUtils.MyDPC(originData, 9);
+disp(evaluation);
+
+originData = load('.\dataset\shape\D31.txt');
 evaluation = DPCUtils.MyDPC(originData, 10);
 disp(evaluation);
 
@@ -185,7 +224,7 @@ clear;
 close all;
 
 % change = 0;
-originData = load('.\dataset\uci\Ecoli.txt');
+originData = load('.\dataset\shape\D31.txt');
 [Arg, ~] = size(originData);
 tmp = Arg / 2;
 evArr = zeros(1, Arg);
