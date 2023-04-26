@@ -18,7 +18,7 @@ function [evaluation] = MyDPC(originData, K, dc, isDraw)
     if (dc > 0) 
         dc = DPCUtils.getDeterminateRadius(ascOrderDistanceArr, dc);
         rho = DPCUtils.getGaussianKernel(distMatrix, dc);
-        %rho = DPCUtils.getCutOffKernel(distMatrix, dc);
+        rho = DPCUtils.getCutOffKernel(distMatrix, dc);
     else
         [rho, wList, RnnList, SnnList, KnnList] = DPCUtils.getLocalDensity2(distMatrix, K);
     end
