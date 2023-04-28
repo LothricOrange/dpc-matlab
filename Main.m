@@ -73,13 +73,34 @@ disp(evaluation);
 originData = load('.\dataset\shape\Twomoons.txt');
 evaluation = DPCUtils.MyDPC(originData, 2);
 disp(evaluation);
+originData = load('.\dataset\shape\Twomoons.txt');
+evaluation = DPCUtils.DPC(originData, 3.8);
+disp(evaluation);
 
 
+originData = load('.\dataset\newDataSet\cth3.txt');
+evaluation = DPCUtils.MyDPC(originData, 17);
+disp(evaluation);
+originData = load('.\dataset\newDataSet\cth3.txt');
+evaluation = DPCUtils.DPC(originData, 0.1);
+disp(evaluation);
+
+originData = load('.\dataset\newDataSet\Ls3.txt');
+evaluation = DPCUtils.MyDPC(originData, 8);111
+disp(evaluation);
+
+originData = load('.\dataset\newDataSet\Ls3.txt');
+evaluation = DPCUtils.DPC(originData, 0.9);
+disp(evaluation);
 
 %ring
 originData = load('.\dataset\newDataSet\ring.txt');
-evaluation = DPCUtils.MyDPC(originData, 6);
+evaluation = DPCUtils.MyDPC(originData, 21);
 disp(evaluation);
+originData = load('.\dataset\newDataSet\ring.txt');
+evaluation = DPCUtils.DPC(originData, 0.1);
+disp(evaluation);
+
 %Compound
 originData = load('.\dataset\newDataSet\Compound.txt');
 evaluation = DPCUtils.MyDPC(originData, 9);
@@ -94,8 +115,12 @@ evaluation = DPCUtils.MyDPC(originData, 5);
 disp(evaluation);
 % Pathbased
 originData = load('.\dataset\newDataSet\pathbased.txt');
-evaluation = DPCUtils.MyDPC(originData, 17);
+evaluation = DPCUtils.DPC(originData, 3.9);
 disp(evaluation);
+originData = load('.\dataset\newDataSet\pathbased.txt');
+evaluation = DPCUtils.DPC(originData, 3.9);
+disp(evaluation);
+
 % Spiral
 originData = load('.\dataset\newDataSet\spiral.txt');
 evaluation = DPCUtils.MyDPC(originData, 3);
@@ -137,6 +162,8 @@ disp(evaluation);
 originData = load('.\dataset\newDataSet\circle3.txt');
 evaluation = DPCUtils.DPC(originData, 3.3);
 disp(evaluation);
+
+
 
 %% uci
 originData = load('.\dataset\uci\iris.txt');
@@ -224,11 +251,11 @@ clear;
 close all;
 
 % change = 0;
-originData = load('.\dataset\shape\D31.txt');
+originData = load('.\dataset\newDataSet\ring.txt');
 [Arg, ~] = size(originData);
 tmp = Arg / 2;
 evArr = zeros(1, Arg);
-for i = 2 : Arg - 1
+for i = 18 : Arg - 1
     evaluation = MyDPC(originData, i, -1, false);
     sum = evaluation(1) + evaluation(2) + evaluation(3);
     evArr(i) = sum;

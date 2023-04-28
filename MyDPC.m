@@ -118,6 +118,7 @@ function [evaluation] = MyDPC(originData, K, dc, isDraw)
     ari = GetAri(originData(:,end), clusterType');
     fmi = GetFmi(originData(:,end), clusterType');
     evaluation = [ami, ari, fmi];
+    %evaluation = [ari, fmi];
 end
 
 
