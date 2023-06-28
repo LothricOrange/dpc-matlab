@@ -51,9 +51,9 @@
 | DPC        | 0.2747 | 0.0554 | 0.5005 | 3.3  | DPC        | 0.7799     | 0.7210     | 0.8166     | 3.7  |
 |            | Cmc    |        |        |      |            | Pathbased  |            |            |      |
 | MDPC       | **1**  | **1**  | **1**  | 2    | MDPC       | **0.9651** | **0.9795** | **0.9863** | 17   |
-| IDPC-FA    | 0.8093 | 0.8421 | 0.9027 | -    | IDPC-FA    | 0.8442     | 0.8593     | 0.9067     | -    |
+| IDPC-FA    | 0.8093 | 0.8421 | 0.9027 | -    | IDPC-FA    | 0.8442     | 0.8593     | 0.9050     | -    |
 | DPCSA      | 0.6656 | 0.5761 | 0.7454 | -    | DPCSA      | 0.7073     | 0.6133     | 0.7511     | -    |
-| FNDPC      | 0.8093 | 0.8421 | 0.9027 | 0.28 | FNDPC      | 0.5751     | 0.5067     | 0.7065     | 0.01 |
+| FNDPC      | 0.8093 | 0.8421 | 0.9027 | 0.28 | FNDPC      | 0.5751     | 0.5050     | 0.7065     | 0.01 |
 | FKNN-DPC   | 1      | 1      | 1      | 49   | FKNN-DPC   | 0.9305     | 0.9499     | 0.9665     | 9    |
 | DPC        | 0.3857 | 0.2661 | 0.5377 | 5    | DPC        | 0.5212     | 0.4717     | 0.6664     | 3.8  |
 |            | Db     |        |        |      |            | Spiral     |            |            |      |
@@ -66,8 +66,8 @@
 |            | Jain   |        |        |      |            | Sticks     |            |            |      |
 | MDPC       | **1**  | **1**  | **1**  | 11   | MDPC       | **1**      | **1**      | **1**      | 2    |
 | IDPC-FA    | **1**  | **1**  | **1**  | -    | IDPC-FA    | **1**      | **1**      | **1**      | -    |
-| DPCSA      | 0.2167 | 0.0442 | 0.5924 | -    | DPCSA      | 0.7634     | 0.636      | 0.7443     | -    |
-| FNDPC      | 0.5961 | 0.7257 | 0.9051 | 0.47 | FNDPC      | 0.7634     | 0.639      | 0.7467     | 0.16 |
+| DPCSA      | 0.2150 | 0.0442 | 0.5924 | -    | DPCSA      | 0.7634     | 0.636      | 0.7443     | -    |
+| FNDPC      | 0.5961 | 0.7257 | 0.9051 | 0.47 | FNDPC      | 0.7634     | 0.639      | 0.7450     | 0.16 |
 | FKNN-DPC   | 0.7092 | 0.8224 | 0.9359 | 43   | FKNN-DPC   | **1**      | **1**      | **1**      | 6    |
 | DPC        | 0.6183 | 0.7146 | 0.8819 | 0.8  | DPC        | 0.8094     | 0.7534     | 0.8235     | 2.1  |
 
@@ -79,15 +79,15 @@
 
 
 
-<img src="./assets/1_MDPC.png" alt="1_MDPC" style="zoom: 67%;" /> <img src="./assets/1_IDPC-FA.png" alt="1_IDPC-FA" style="zoom: 67%;" />
+<img src="./assets/1_MDPC.png" alt="1_MDPC" style="zoom: 50%;" /> <img src="./assets/1_IDPC-FA.png" alt="1_IDPC-FA" style="zoom: 50%;" />
 
 ​                                          (a) MDPC                                                                               (b) IDPC-FA
 
-<img src="./assets/1_DPCSA.png" alt="1_DPCSA" style="zoom: 67%;" /> <img src="./assets/1_FNDPC.png" alt="1_FNDPC" style="zoom: 67%;" />
+<img src="./assets/1_DPCSA.png" alt="1_DPCSA" style="zoom: 50%;" /> <img src="./assets/1_FNDPC.png" alt="1_FNDPC" style="zoom: 50%;" />
 
 ​                                          (c) DPCSA                                                                                (d) FNDPC
 
-<img src="./assets/1_FKNN-DPC.png" alt="1_FKNN-DPC" style="zoom: 67%;" /> <img src="./assets/1_DPC.png" alt="1_DPC" style="zoom: 67%;" />
+<img src="./assets/1_FKNN-DPC.png" alt="1_FKNN-DPC" style="zoom: 50%;" /> <img src="./assets/1_DPC.png" alt="1_DPC" style="zoom: 50%;" />
 
 ​                                     (e) FKNN-DPC                                                                                (f) DPC
 
@@ -97,15 +97,15 @@
 
 
 
-<img src="./assets/2_MDPC.png" alt="2_MDPC" style="zoom: 67%;" /> <img src="./assets/2_IDPC-FA.png" alt="2_IDPC-FA" style="zoom: 67%;" />
+<img src="./assets/2_MDPC.png" alt="2_MDPC" style="zoom: 50%;" /> <img src="./assets/2_IDPC-FA.png" alt="2_IDPC-FA" style="zoom: 50%;" />
 
 ​                                          (a) MDPC                                                                               (b) IDPC-FA
 
-<img src="./assets/2_DPCSA.png" alt="2_DPCSA" style="zoom: 67%;" /> <img src="./assets/2_FNDPC.png" alt="2_FNDPC" style="zoom: 67%;" />
+<img src="./assets/2_DPCSA.png" alt="2_DPCSA" style="zoom: 50%;" /> <img src="./assets/2_FNDPC.png" alt="2_FNDPC" style="zoom: 50%;" />
 
 ​                                          (c) DPCSA                                                                                (d) FNDPC
 
-<img src="./assets/2_FKNN-DPC.png" alt="2_FKNN-DPC" style="zoom: 67%;" /> <img src="./assets/2_DPC.png" alt="2_DPC" style="zoom: 67%;" />
+<img src="./assets/2_FKNN-DPC.png" alt="2_FKNN-DPC" style="zoom: 50%;" /> <img src="./assets/2_DPC.png" alt="2_DPC" style="zoom: 50%;" />
 
 ​                                     (e) FKNN-DPC                                                                                (f) DPC
 
@@ -115,15 +115,15 @@
 
 
 
-<img src="./assets/3_MDPC.png" alt="3_MDPC" style="zoom: 67%;" /> <img src="./assets/3_IDPC-FA.png" alt="3_IDPC-FA" style="zoom: 67%;" />
+<img src="./assets/3_MDPC.png" alt="3_MDPC" style="zoom: 50%;" /> <img src="./assets/3_IDPC-FA.png" alt="3_IDPC-FA" style="zoom: 50%;" />
 
 ​                                          (a) MDPC                                                                               (b) IDPC-FA
 
-<img src="./assets/3_DPCSA.png" alt="3_DPCSA" style="zoom: 67%;" /> <img src="./assets/3_FNDPC.png" alt="3_FNDPC" style="zoom: 67%;" />
+<img src="./assets/3_DPCSA.png" alt="3_DPCSA" style="zoom: 50%;" /> <img src="./assets/3_FNDPC.png" alt="3_FNDPC" style="zoom: 50%;" />
 
 ​                                          (c) DPCSA                                                                                (d) FNDPC
 
-<img src="./assets/3_FKNN-DPC.png" alt="3_FKNN-DPC" style="zoom: 67%;" /> <img src="./assets/3_DPC.png" alt="3_DPC" style="zoom: 67%;" />
+<img src="./assets/3_FKNN-DPC.png" alt="3_FKNN-DPC" style="zoom: 50%;" /> <img src="./assets/3_DPC.png" alt="3_DPC" style="zoom: 50%;" />
 
 ​                                     (e) FKNN-DPC                                                                                (f) DPC
 
@@ -133,15 +133,15 @@
 
 
 
-<img src="./assets/4_MDPC.png" alt="4_MDPC" style="zoom: 67%;" /> <img src="./assets/4_IDPC-FA.png" alt="4_IDPC-FA" style="zoom: 67%;" />
+<img src="./assets/4_MDPC.png" alt="4_MDPC" style="zoom: 50%;" /> <img src="./assets/4_IDPC-FA.png" alt="4_IDPC-FA" style="zoom: 50%;" />
 
 ​                                          (a) MDPC                                                                               (b) IDPC-FA
 
-<img src="./assets/4_DPCSA.png" alt="4_DPCSA" style="zoom: 67%;" /> <img src="./assets/4_FNDPC.png" alt="4_FNDPC" style="zoom: 67%;" />
+<img src="./assets/4_DPCSA.png" alt="4_DPCSA" style="zoom: 50%;" /> <img src="./assets/4_FNDPC.png" alt="4_FNDPC" style="zoom: 50%;" />
 
 ​                                          (c) DPCSA                                                                                (d) FNDPC
 
-<img src="./assets/4_FKNN-DPC.png" alt="4_FKNN-DPC" style="zoom: 67%;" /> <img src="./assets/4_DPC.png" alt="4_DPC" style="zoom: 67%;" />
+<img src="./assets/4_FKNN-DPC.png" alt="4_FKNN-DPC" style="zoom: 50%;" /> <img src="./assets/4_DPC.png" alt="4_DPC" style="zoom: 50%;" />
 
 ​                                     (e) FKNN-DPC                                                                                (f) DPC
 
@@ -151,15 +151,15 @@
 
 
 
-<img src="./assets/5_MDPC.png" alt="5_MDPC" style="zoom: 67%;" /> <img src="./assets/5_IDPC-FA.png" alt="5_IDPC-FA" style="zoom: 67%;" />
+<img src="./assets/5_MDPC.png" alt="5_MDPC" style="zoom: 50%;" /> <img src="./assets/5_IDPC-FA.png" alt="5_IDPC-FA" style="zoom: 50%;" />
 
 ​                                          (a) MDPC                                                                               (b) IDPC-FA
 
-<img src="./assets/5_DPCSA.png" alt="5_DPCSA" style="zoom: 67%;" /> <img src="./assets/5_FNDPC.png" alt="5_FNDPC" style="zoom: 67%;" />
+<img src="./assets/5_DPCSA.png" alt="5_DPCSA" style="zoom: 50%;" /> <img src="./assets/5_FNDPC.png" alt="5_FNDPC" style="zoom: 50%;" />
 
 ​                                          (c) DPCSA                                                                                (d) FNDPC
 
-<img src="./assets/5_FKNN-DPC.png" alt="5_FKNN-DPC" style="zoom: 67%;" /> <img src="./assets/5_DPC.png" alt="5_DPC" style="zoom: 67%;" />
+<img src="./assets/5_FKNN-DPC.png" alt="5_FKNN-DPC" style="zoom: 50%;" /> <img src="./assets/5_DPC.png" alt="5_DPC" style="zoom: 50%;" />
 
 ​                                     (e) FKNN-DPC                                                                                (f) DPC
 
@@ -179,18 +179,18 @@
 | ---------- | ---------- | ---------- | ---------- | ---- | ---------- | ------------ | ---------- | ---------- | ---- |
 |            | Ecoli      |            |            |      |            | Seeds        |            |            |      |
 | MDPC       | 0.6522     | 0.7368     | 0.8160     | 20   | MDPC       | 0.7483       | 0.7992     | 0.8655     | 7    |
-| IDPC-FA    | **0.6640** | **0.7561** | **0.8280** | -    | IDPC-FA    | 0.7299       | 0.767      | 0.8444     | -    |
-| DPCSA      | 0.4406     | 0.4593     | 0.6467     | -    | DPCSA      | 0.6609       | 0.6873     | 0.7918     | -    |
+| IDPC-FA    | **0.6640** | **0.7561** | **0.8280** | -    | IDPC-FA    | 0.7299       | 0.750      | 0.8444     | -    |
+| DPCSA      | 0.4406     | 0.4593     | 0.6450     | -    | DPCSA      | 0.6609       | 0.6873     | 0.7918     | -    |
 | FNDPC      | 0.4833     | 0.5618     | 0.7178     | 0.35 | FNDPC      | 0.7136       | 0.7545     | 0.8361     | 0.07 |
 | FKNN-DPC   | 0.5878     | 0.5894     | 0.7027     | 2    | FKNN-DPC   | **0.7757**   | **0.8024** | **0.8682** | 9    |
-| DPC        | 0.4978     | 0.4465     | 0.5775     | 0.4  | DPC        | 0.7299       | 0.767      | 0.8444     | 0.7  |
+| DPC        | 0.4978     | 0.4465     | 0.5775     | 0.4  | DPC        | 0.7299       | 0.750      | 0.8444     | 0.7  |
 |            | Ionosphere |            |            |      |            | Segmentation |            |            |      |
 | MDPC       | **0.4125** | **0.5356** | **0.8020** | 32   | MDPC       | 0.6869       | 0.6296     | 0.6812     | 10   |
 | IDPC-FA    | 0.1355     | 0.2183     | 0.6432     | -    | IDPC-FA    | **0.7179**   | **0.6493** | **0.6982** | -    |
-| DPCSA      | 0.1335     | 0.2135     | 0.6390     | -    | DPCSA      | 0.5130       | 0.3667     | 0.4887     | -    |
+| DPCSA      | 0.1335     | 0.2135     | 0.6390     | -    | DPCSA      | 0.5130       | 0.3650     | 0.4887     | -    |
 | FNDPC      | 0.1630     | 0.2483     | 0.6531     | 0.06 | FNDPC      | 0.7176       | 0.6338     | 0.6859     | 0.19 |
 | FKNN-DPC   | 0.3485     | 0.4790     | 0.7716     | 8    | FKNN-DPC   | 0.6013       | 0.4780     | 0.5695     | 8    |
-| DPC        | 0.1376     | 0.2231     | 0.6476     | 0.4  | DPC        | 0.6927       | 0.6004     | 0.6730     | 1.5  |
+| DPC        | 0.1376     | 0.2231     | 0.6476     | 0.4  | DPC        | 0.6927       | 0.6004     | 0.5030     | 1.5  |
 |            | Iris       |            |            |      |            | Wdbc         |            |            |      |
 | MDPC       | **0.8831** | **0.9038** | **0.9355** | 7    | MDPC       | **0.7101**   | **0.8113** | **0.9137** | 61   |
 | IDPC-FA    | 0.8623     | 0.8857     | 0.9233     | -    | IDPC-FA    | 0.6237       | 0.7423     | 0.8829     | -    |
@@ -200,11 +200,11 @@
 | DPC        | 0.8606     | 0.8857     | 0.9233     | 0.2  | DPC        | 0.4366       | 0.4964     | 0.7941     | 0.5  |
 |            | Libras     |            |            |      |            | Wine         |            |            |      |
 | MDPC       | **0.5822** | 0.3623     | 0.4096     | 5    | MDPC       | **0.8598**   | 0.8837     | 0.9227     | 32   |
-| IDPC-FA    | 0.5733     | **0.3816** | **0.4247** | -    | IDPC-FA    | 0.7675       | 0.7713     | 0.8478     | -    |
+| IDPC-FA    | 0.5733     | **0.3816** | **0.4247** | -    | IDPC-FA    | 0.7505       | 0.7713     | 0.8478     | -    |
 | DPCSA      | 0.5388     | 0.3095     | 0.3791     | -    | DPCSA      | 0.7480       | 0.7414     | 0.8283     | -    |
 | FNDPC      | 0.5494     | 0.3290     | 0.3869     | 0.17 | FNDPC      | 0.7898       | 0.8025     | 0.8686     | 0.26 |
 | FKNN-DPC   | 0.5554     | 0.3459     | 0.4044     | 10   | FKNN-DPC   | 0.8481       | **0.8839** | **0.9229** | 8    |
-| DPC        | 0.5358     | 0.3193     | 0.3717     | 0.3  | DPC        | 0.7065       | 0.6724     | 0.7835     | 2    |
+| DPC        | 0.5358     | 0.3193     | 0.3717     | 0.3  | DPC        | 0.7065       | 0.5024     | 0.7835     | 2    |
 
 
 
@@ -246,15 +246,15 @@
 
 
 
-<img src="./assets/6_MDPC.png" alt="6_MDPC" style="zoom: 67%;" /> <img src="./assets/6_IDPC-FA.png" alt="6_IDPC-FA" style="zoom: 67%;" />
+<img src="./assets/6_MDPC.png" alt="6_MDPC" style="zoom: 50%;" /> <img src="./assets/6_IDPC-FA.png" alt="6_IDPC-FA" style="zoom: 50%;" />
 
 ​                                          (a) MDPC                                                                               (b) IDPC-FA
 
-<img src="./assets/6_DPCSA.png" alt="5_DPCSA" style="zoom: 67%;" /> <img src="./assets/6_FNDPC.png" alt="5_FNDPC" style="zoom: 67%;" />
+<img src="./assets/6_DPCSA.png" alt="5_DPCSA" style="zoom: 50%;" /> <img src="./assets/6_FNDPC.png" alt="5_FNDPC" style="zoom: 50%;" />
 
 ​                                          (c) DPCSA                                                                                (d) FNDPC
 
-<img src="./assets/6_FKNN-DPC.png" alt="6_FKNN-DPC" style="zoom: 67%;" /> <img src="./assets/6_DPC.png" alt="6_DPC" style="zoom: 67%;" />
+<img src="./assets/6_FKNN-DPC.png" alt="6_FKNN-DPC" style="zoom: 50%;" /> <img src="./assets/6_DPC.png" alt="6_DPC" style="zoom: 50%;" />
 
 ​                                     (e) FKNN-DPC                                                                                (f) DPC
 
@@ -264,15 +264,15 @@
 
 
 
-<img src="./assets/7_MDPC.png" alt="7_MDPC" style="zoom: 67%;" /> <img src="./assets/7_IDPC-FA.png" alt="7_IDPC-FA" style="zoom: 67%;" />
+<img src="./assets/7_MDPC.png" alt="7_MDPC" style="zoom: 50%;" /> <img src="./assets/7_IDPC-FA.png" alt="7_IDPC-FA" style="zoom: 50%;" />
 
 ​                                          (a) MDPC                                                                               (b) IDPC-FA
 
-<img src="./assets/7_DPCSA.png" alt="7_DPCSA" style="zoom: 67%;" /> <img src="./assets/7_FNDPC.png" alt="7_FNDPC" style="zoom: 67%;" />
+<img src="./assets/7_DPCSA.png" alt="7_DPCSA" style="zoom: 50%;" /> <img src="./assets/7_FNDPC.png" alt="7_FNDPC" style="zoom: 50%;" />
 
 ​                                          (c) DPCSA                                                                                (d) FNDPC
 
-<img src="./assets/7_FKNN-DPC.png" alt="7_FKNN-DPC" style="zoom: 67%;" /> <img src="./assets/7_DPC.png" alt="7_DPC" style="zoom: 67%;" />
+<img src="./assets/7_FKNN-DPC.png" alt="7_FKNN-DPC" style="zoom: 50%;" /> <img src="./assets/7_DPC.png" alt="7_DPC" style="zoom: 50%;" />
 
 ​                                     (e) FKNN-DPC                                                                                (f) DPC
 
@@ -282,15 +282,15 @@
 
 
 
-<img src="./assets/8_MDPC.png" alt="8_MDPC" style="zoom: 67%;" /> <img src="./assets/8_IDPC-FA.png" alt="8_IDPC-FA" style="zoom: 67%;" />
+<img src="./assets/8_MDPC.png" alt="8_MDPC" style="zoom: 50%;" /> <img src="./assets/8_IDPC-FA.png" alt="8_IDPC-FA" style="zoom: 50%;" />
 
 ​                                          (a) MDPC                                                                               (b) IDPC-FA
 
-<img src="./assets/8_DPCSA.png" alt="8_DPCSA" style="zoom: 67%;" /> <img src="./assets/8_FNDPC.png" alt="8_FNDPC" style="zoom: 67%;" />
+<img src="./assets/8_DPCSA.png" alt="8_DPCSA" style="zoom: 50%;" /> <img src="./assets/8_FNDPC.png" alt="8_FNDPC" style="zoom: 50%;" />
 
 ​                                          (c) DPCSA                                                                                (d) FNDPC
 
-<img src="./assets/8_FKNN-DPC.png" alt="8_FKNN-DPC" style="zoom: 67%;" /> <img src="./assets/8_DPC.png" alt="8_DPC" style="zoom: 67%;" />
+<img src="./assets/8_FKNN-DPC.png" alt="8_FKNN-DPC" style="zoom: 50%;" /> <img src="./assets/8_DPC.png" alt="8_DPC" style="zoom: 50%;" />
 
 ​                                     (e) FKNN-DPC                                                                                (f) DPC
 
