@@ -77,14 +77,14 @@
 
 
 <div align="center">
-<img src="./assets/1_MDPC.png" alt="1_MDPC" style="zoom: 50%;" align="center" /> 
+<img src="./assets/1_MDPC.png" alt="1_MDPC" style="zoom: 30%;" align="center" /> 
 <div align="center">(a) MDPC</div>
 
 
-<img src="./assets/1_IDPC-FA.png" alt="1_IDPC-FA" style="zoom: 50%;" align="center" /> 
+<img src="./assets/1_IDPC-FA.png" alt="1_IDPC-FA" style="zoom: 30%;" align="center" /> 
 <div align="center">(b) IDPC-FA</div>      
 
-<img src="./assets/1_DPCSA.png" alt="1_DPCSA" style="zoom: 50%;" align="center" /> 
+<img src="./assets/1_DPCSA.png" alt="1_DPCSA" style="zoom: 40%;" align="center" /> 
 <div align="center">(c) DPCSA</div> 
 
 <img src="./assets/1_FNDPC.png" alt="1_FNDPC" style="zoom: 50%;" align="center" /> 
