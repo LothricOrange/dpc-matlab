@@ -95,7 +95,7 @@
 
 <img src="./assets/1_DPC.png" alt="1_DPC" style="zoom: 50%;" /> 
 <div align="center">(f) DPC</div>
-</div>
+
 ​                                                                                                                     
 
 ​                                                              图1 6种算法在Db数据集上的聚类结果
@@ -196,7 +196,7 @@
 <div align="center">(f) DPC</div>
 
 ​                                                             图5 6种算法在Pathbased数据集上的聚类结果
-
+</div>
 ***
 
 
