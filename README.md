@@ -279,17 +279,17 @@
 
 <div align="center">
 <img src="./assets/6_MDPC.png" alt="6_MDPC" style="zoom: 50%;" /> 
-(a) MDPC
+<div align="center">(a) MDPC</div>
 <img src="./assets/6_IDPC-FA.png" alt="6_IDPC-FA" style="zoom: 50%;" />   
-(b) IDPC-FA
+<div align="center">(b) IDPC-FA</div>
 <img src="./assets/6_DPCSA.png" alt="5_DPCSA" style="zoom: 50%;" /> 
-(c) DPCSA
+<div align="center">(c) DPCSA</div>
 <img src="./assets/6_FNDPC.png" alt="5_FNDPC" style="zoom: 50%;" />
-(d) FNDPC
+<div align="center">(d) FNDPC</div>
 <img src="./assets/6_FKNN-DPC.png" alt="6_FKNN-DPC" style="zoom: 50%;" /> 
-(e) FKNN-DPC
+<div align="center">(e) FKNN-DPC</div>
 <img src="./assets/6_DPC.png" alt="6_DPC" style="zoom: 50%;" />
-(f) DPC
+<div align="center">(f) DPC</div>
 
 ​                                                                 图6 6种算法在Ls数据集上的聚类结果
 
@@ -298,17 +298,17 @@
 
 
 <img src="./assets/7_MDPC.png" alt="7_MDPC" style="zoom: 50%;" /> 
-(a) MDPC
+<div align="center">(a) MDPC</div>
 <img src="./assets/7_IDPC-FA.png" alt="7_IDPC-FA" style="zoom: 50%;" />    
-(b) IDPC-FA
+<div align="center">(b) IDPC-FA</div>
 <img src="./assets/7_DPCSA.png" alt="7_DPCSA" style="zoom: 50%;" /> 
-(c) DPCSA
+<div align="center">(c) DPCSA</div>
 <img src="./assets/7_FNDPC.png" alt="7_FNDPC" style="zoom: 50%;" />
-(d) FNDPC
+<div align="center">(d) FNDPC</div>
 <img src="./assets/7_FKNN-DPC.png" alt="7_FKNN-DPC" style="zoom: 50%;" /> 
-(e) FKNN-DPC
+<div align="center">(e) FKNN-DPC</div>
 <img src="./assets/7_DPC.png" alt="7_DPC" style="zoom: 50%;" />
-(f) DPC
+<div align="center">(f) DPC</div>
 
 ​                                                         图7 6种算法在Twomoons数据集上的聚类结果
 
@@ -317,17 +317,17 @@
 
 
 <img src="./assets/8_MDPC.png" alt="8_MDPC" style="zoom: 50%;" /> 
-(a) MDPC
+<div align="center">(a) MDPC</div>
 <img src="./assets/8_IDPC-FA.png" alt="8_IDPC-FA" style="zoom: 50%;" />
-(b) IDPC-FA
+<div align="center">(b) IDPC-FA</div>
 <img src="./assets/8_DPCSA.png" alt="8_DPCSA" style="zoom: 50%;" /> 
-(c) DPCSA
+<div align="center">(c) DPCSA</div>
 <img src="./assets/8_FNDPC.png" alt="8_FNDPC" style="zoom: 50%;" />
-(d) FNDPC
+<div align="center">(d) FNDPC</div>
 <img src="./assets/8_FKNN-DPC.png" alt="8_FKNN-DPC" style="zoom: 50%;" /> 
-(e) FKNN-DPC
+<div align="center">(e) FKNN-DPC</div>
 <img src="./assets/8_DPC.png" alt="8_DPC" style="zoom: 50%;" />
-(f) DPC
+<div align="center">(f) DPC</div>
 
 ​                                                                  图8 6种算法在Cth数据集上的聚类结果
 </div>
