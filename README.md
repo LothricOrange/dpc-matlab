@@ -76,9 +76,10 @@
 ***
 
 
-
+<div align="center">
 <img src="./assets/1_MDPC.png" alt="1_MDPC" style="zoom: 50%;" align="center" /> 
-(a) MDPC 
+(a) MDPC
+</div>
 
 <img src="./assets/1_IDPC-FA.png" alt="1_IDPC-FA" style="zoom: 50%;" align="center" /> 
 (b) IDPC-FA      
