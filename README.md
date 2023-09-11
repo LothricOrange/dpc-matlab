@@ -5,7 +5,7 @@
 ## 流形数据集的实验结果		
 
 ​		为验证MDPC算法的有效性，使用MDPC算法与IDPC-FA[^1]、DPCSA[^2]、FNDPC[^3]、FKNN-DPC[^4]、DPC算法[^5]对8个流形数据集[^6]及8个UCI数据集[^7]进行了对比实验，数据集的信息在表1和表2进行展示。其中IDPC-FA与DPCSA算法不需要进行设置参数在实验结果表中使用“-”表示，其余算法均在实验过程中调参得到的最优结果。其中DPC算法参数在升序排列后的所有样本间的距离集合0.1%到5%之间选取，步长为0.1%。对聚类效果的评价指标为Adjusted Mutual Information(AMI)[^8]、Adjusted Rand Index(ARI)[^8]、Fowlkes-Mallows index(FMI)[^9]三个评价指标，指标值越接近1表示聚类结果越好。
-
+<div align="center">
 表1 流形数据集
 
 | 数据集    | 样本数 | 维度 | 簇数 |
@@ -32,10 +32,10 @@
 | WDBC         | 569    | 30   | 2    |
 | Wine         | 178    | 13   | 3    |
 
-
+</div>
 
 ​		使用MDPC算法与IDPC-FA、DPCSA、FNDPC、FKNN-DPC、DPC算法对8个流形数据集进行聚类，聚类效果如表3所示。表3中MDPC在Circle、Cmc、Db、Jain、Lineblobs、Spiral、Sticks数据集上得到的聚类效果的评价指标AMI、ARI、FMI均为1，达到完美聚类，在Pathbased数据集上表现也是六个算法之间的最佳。
-
+<div align="center">
 ​                                                                 表3 6种算法在流形数据集的聚类效果比较
 
 | Algorithms | AMI    | ARI    | FMI    | Arg- | Algorithms | AMI        | ARI        | FMI        | Arg- |
@@ -68,7 +68,7 @@
 | FNDPC      | 0.5961 | 0.7257 | 0.9051 | 0.47 | FNDPC      | 0.7634     | 0.639      | 0.7450     | 0.16 |
 | FKNN-DPC   | 0.7092 | 0.8224 | 0.9359 | 43   | FKNN-DPC   | **1**      | **1**      | **1**      | 6    |
 | DPC        | 0.6183 | 0.7146 | 0.8819 | 0.8  | DPC        | 0.8094     | 0.7534     | 0.8235     | 2.1  |
-
+</div>
 ​		下面是MDPC、IDPC-FA、DPCSA、FNDPC、FKNN-DPC、DPC这6种算法在两种流形数据集上的聚类结果图，聚类中心在图中使用“五角星”表示，使用不同颜色表示不同类别。
 
 
