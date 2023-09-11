@@ -278,17 +278,17 @@
 
 
 
-<img src="./assets/6_MDPC.png" alt="6_MDPC" style="zoom: 50%;" /> <img src="./assets/6_IDPC-FA.png" alt="6_IDPC-FA" style="zoom: 50%;" />
-
-​                                          (a) MDPC                                                                               (b) IDPC-FA
-
-<img src="./assets/6_DPCSA.png" alt="5_DPCSA" style="zoom: 50%;" /> <img src="./assets/6_FNDPC.png" alt="5_FNDPC" style="zoom: 50%;" />
-
-​                                          (c) DPCSA                                                                                (d) FNDPC
-
-<img src="./assets/6_FKNN-DPC.png" alt="6_FKNN-DPC" style="zoom: 50%;" /> <img src="./assets/6_DPC.png" alt="6_DPC" style="zoom: 50%;" />
-
-​                                     (e) FKNN-DPC                                                                                (f) DPC
+<img src="./assets/6_MDPC.png" alt="6_MDPC" style="zoom: 50%;" /> 
+(a) MDPC
+<img src="./assets/6_IDPC-FA.png" alt="6_IDPC-FA" style="zoom: 50%;" />                                                                             (b) IDPC-FA
+<img src="./assets/6_DPCSA.png" alt="5_DPCSA" style="zoom: 50%;" /> 
+(c) DPCSA
+<img src="./assets/6_FNDPC.png" alt="5_FNDPC" style="zoom: 50%;" />
+(d) FNDPC
+<img src="./assets/6_FKNN-DPC.png" alt="6_FKNN-DPC" style="zoom: 50%;" /> 
+(e) FKNN-DPC
+<img src="./assets/6_DPC.png" alt="6_DPC" style="zoom: 50%;" />
+(f) DPC
 
 ​                                                                 图6 6种算法在Ls数据集上的聚类结果
 
@@ -296,17 +296,17 @@
 
 
 
-<img src="./assets/7_MDPC.png" alt="7_MDPC" style="zoom: 50%;" /> <img src="./assets/7_IDPC-FA.png" alt="7_IDPC-FA" style="zoom: 50%;" />
-
-​                                          (a) MDPC                                                                               (b) IDPC-FA
-
-<img src="./assets/7_DPCSA.png" alt="7_DPCSA" style="zoom: 50%;" /> <img src="./assets/7_FNDPC.png" alt="7_FNDPC" style="zoom: 50%;" />
-
-​                                          (c) DPCSA                                                                                (d) FNDPC
-
-<img src="./assets/7_FKNN-DPC.png" alt="7_FKNN-DPC" style="zoom: 50%;" /> <img src="./assets/7_DPC.png" alt="7_DPC" style="zoom: 50%;" />
-
-​                                     (e) FKNN-DPC                                                                                (f) DPC
+<img src="./assets/7_MDPC.png" alt="7_MDPC" style="zoom: 50%;" /> 
+(a) MDPC
+<img src="./assets/7_IDPC-FA.png" alt="7_IDPC-FA" style="zoom: 50%;" />                                                                             (b) IDPC-FA
+<img src="./assets/7_DPCSA.png" alt="7_DPCSA" style="zoom: 50%;" /> 
+(c) DPCSA
+<img src="./assets/7_FNDPC.png" alt="7_FNDPC" style="zoom: 50%;" />
+(d) FNDPC
+<img src="./assets/7_FKNN-DPC.png" alt="7_FKNN-DPC" style="zoom: 50%;" /> 
+(e) FKNN-DPC
+<img src="./assets/7_DPC.png" alt="7_DPC" style="zoom: 50%;" />
+(f) DPC
 
 ​                                                         图7 6种算法在Twomoons数据集上的聚类结果
 
@@ -314,17 +314,20 @@
 
 
 
-<img src="./assets/8_MDPC.png" alt="8_MDPC" style="zoom: 50%;" /> <img src="./assets/8_IDPC-FA.png" alt="8_IDPC-FA" style="zoom: 50%;" />
+<img src="./assets/8_MDPC.png" alt="8_MDPC" style="zoom: 50%;" /> 
+(a) MDPC
+<img src="./assets/8_IDPC-FA.png" alt="8_IDPC-FA" style="zoom: 50%;" />
+(b) IDPC-FA
 
-​                                          (a) MDPC                                                                               (b) IDPC-FA
+<img src="./assets/8_DPCSA.png" alt="8_DPCSA" style="zoom: 50%;" /> 
+(c) DPCSA
+<img src="./assets/8_FNDPC.png" alt="8_FNDPC" style="zoom: 50%;" />
+(d) FNDPC
 
-<img src="./assets/8_DPCSA.png" alt="8_DPCSA" style="zoom: 50%;" /> <img src="./assets/8_FNDPC.png" alt="8_FNDPC" style="zoom: 50%;" />
-
-​                                          (c) DPCSA                                                                                (d) FNDPC
-
-<img src="./assets/8_FKNN-DPC.png" alt="8_FKNN-DPC" style="zoom: 50%;" /> <img src="./assets/8_DPC.png" alt="8_DPC" style="zoom: 50%;" />
-
-​                                     (e) FKNN-DPC                                                                                (f) DPC
+<img src="./assets/8_FKNN-DPC.png" alt="8_FKNN-DPC" style="zoom: 50%;" /> 
+(e) FKNN-DPC
+<img src="./assets/8_DPC.png" alt="8_DPC" style="zoom: 50%;" />
+(f) DPC
 
 ​                                                                  图8 6种算法在Cth数据集上的聚类结果
 
