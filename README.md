@@ -82,19 +82,19 @@
 
 
 <img src="./assets/1_IDPC-FA.png" alt="1_IDPC-FA" style="zoom: 50%;" align="center" /> 
-(b) IDPC-FA      
+<div align="center">(b) IDPC-FA</div>      
 
 <img src="./assets/1_DPCSA.png" alt="1_DPCSA" style="zoom: 50%;" align="center" /> 
-(c) DPCSA 
+<div align="center">(c) DPCSA</div> 
 
 <img src="./assets/1_FNDPC.png" alt="1_FNDPC" style="zoom: 50%;" align="center" /> 
-(d) FNDPC​     
+<div align="center">(d) FNDPC</div>​     
 
 <img src="./assets/1_FKNN-DPC.png" alt="1_FKNN-DPC" style="zoom: 50%;" align="center" /> 
-(e) FKNN-DPC 
+<div align="center">(e) FKNN-DPC</div> 
 
 <img src="./assets/1_DPC.png" alt="1_DPC" style="zoom: 50%;" /> 
-(f) DPC
+<div align="center">(f) DPC</div>
 </div>
 ​                                                                                                                     
 
@@ -105,22 +105,22 @@
 
 
 <img src="./assets/2_MDPC.png" alt="2_MDPC" style="zoom: 50%;" /> 
-(a) MDPC
+<div align="center">(a) MDPC</div>
 
 <img src="./assets/2_IDPC-FA.png" alt="2_IDPC-FA" style="zoom: 50%;" />
-(b) IDPC-FA
+<div align="center">(b) IDPC-FA</div>
 
 <img src="./assets/2_DPCSA.png" alt="2_DPCSA" style="zoom: 50%;" /> 
-(c) DPCSA      
+<div align="center">(c) DPCSA</div>      
 
 <img src="./assets/2_FNDPC.png" alt="2_FNDPC" style="zoom: 50%;" />
-(d) FNDPC
+<div align="center">(d) FNDPC</div>
 
 <img src="./assets/2_FKNN-DPC.png" alt="2_FKNN-DPC" style="zoom: 50%;" /> 
-(e) FKNN-DPC  
+<div align="center">(e) FKNN-DPC</div>  
 
 <img src="./assets/2_DPC.png" alt="2_DPC" style="zoom: 50%;" />
-(f) DPC
+<div align="center">(f) DPC</div>
 
 ​                                                             图2 6种算法在Cmc数据集上的聚类结果
 
@@ -129,22 +129,22 @@
 
 
 <img src="./assets/3_MDPC.png" alt="3_MDPC" style="zoom: 50%;" /> 
-(a) MDPC
+<div align="center">(a) MDPC</div>
 
 <img src="./assets/3_IDPC-FA.png" alt="3_IDPC-FA" style="zoom: 50%;" />
-(b) IDPC-FA
+<div align="center">(b) IDPC-FA</div>
 
 <img src="./assets/3_DPCSA.png" alt="3_DPCSA" style="zoom: 50%;" /> 
-(c) DPCSA 
+<div align="center">(c) DPCSA</div> 
 
 <img src="./assets/3_FNDPC.png" alt="3_FNDPC" style="zoom: 50%;" />
-(d) FNDPC
+<div align="center">(d) FNDPC</div>
 
 <img src="./assets/3_FKNN-DPC.png" alt="3_FKNN-DPC" style="zoom: 50%;" /> 
-(e) FKNN-DPC 
+<div align="center">(e) FKNN-DPC</div> 
 
 ​<img src="./assets/3_DPC.png" alt="3_DPC" style="zoom: 50%;" />                                                                                                                    
-(f) DPC
+<div align="center">(f) DPC</div>
 
 ​                                                             图3 6种算法在Jain数据集上的聚类结果
 
@@ -153,22 +153,22 @@
 
 
 <img src="./assets/4_MDPC.png" alt="4_MDPC" style="zoom: 50%;" /> 
-(a) MDPC      
+<div align="center">(a) MDPC</div>      
 
 <img src="./assets/4_IDPC-FA.png" alt="4_IDPC-FA" style="zoom: 50%;" />
-(b) IDPC-FA
+<div align="center">(b) IDPC-FA</div>
 
 <img src="./assets/4_DPCSA.png" alt="4_DPCSA" style="zoom: 50%;" />
-(c) DPCSA
+<div align="center">(c) DPCSA</div>
 
 <img src="./assets/4_FNDPC.png" alt="4_FNDPC" style="zoom: 50%;" />
-(d) FNDPC
+<div align="center">(d) FNDPC</div>
 
 <img src="./assets/4_FKNN-DPC.png" alt="4_FKNN-DPC" style="zoom: 50%;" /> 
-(e) FKNN-DPC
+<div align="center">(e) FKNN-DPC</div>
 
 <img src="./assets/4_DPC.png" alt="4_DPC" style="zoom: 50%;" />                                                                                
-(f) DPC
+<div align="center">(f) DPC</div>
 
 ​                                                             图4 6种算法在Circle数据集上的聚类结果
 
@@ -177,23 +177,23 @@
 
 
 <img src="./assets/5_MDPC.png" alt="5_MDPC" style="zoom: 50%;" /> 
-(a) MDPC     
+<div align="center">(a) MDPC</div>     
 
 <img src="./assets/5_IDPC-FA.png" alt="5_IDPC-FA" style="zoom: 50%;" />
-(b) IDPC-FA
+<div align="center">(b) IDPC-FA</div>
 
 <img src="./assets/5_DPCSA.png" alt="5_DPCSA" style="zoom: 50%;" /> 
-(c) DPCSA
+<div align="center">(c) DPCSA</div>
 
 <img src="./assets/5_FNDPC.png" alt="5_FNDPC" style="zoom: 50%;" />
-(d) FNDPC
+<div align="center">(d) FNDPC</div>
 
 <img src="./assets/5_FKNN-DPC.png" alt="5_FKNN-DPC" style="zoom: 50%;" /> 
-(e) FKNN-DPC
+<div align="center">(e) FKNN-DPC</div>
 
 
 <img src="./assets/5_DPC.png" alt="5_DPC" style="zoom: 50%;" />
-(f) DPC
+<div align="center">(f) DPC</div>
 
 ​                                                             图5 6种算法在Pathbased数据集上的聚类结果
 
