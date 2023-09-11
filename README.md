@@ -79,7 +79,7 @@
 <div align="center">
 <img src="./assets/1_MDPC.png" alt="1_MDPC" style="zoom: 50%;" align="center" /> 
 (a) MDPC
-</div>
+
 
 <img src="./assets/1_IDPC-FA.png" alt="1_IDPC-FA" style="zoom: 50%;" align="center" /> 
 (b) IDPC-FA      
@@ -95,7 +95,7 @@
 
 <img src="./assets/1_DPC.png" alt="1_DPC" style="zoom: 50%;" /> 
 (f) DPC
-
+</div>
 ​                                                                                                                     
 
 ​                                                              图1 6种算法在Db数据集上的聚类结果
