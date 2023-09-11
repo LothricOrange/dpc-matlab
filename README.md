@@ -19,7 +19,6 @@
 | Spiral    | 312    | 2    | 3    |
 | Sticks    | 512    | 2    | 4    |
 
-
 表2 UCI数据集
 
 | 数据集       | 样本数 | 维度 | 簇数 |
@@ -99,17 +98,18 @@
 
 
 
-<img src="./assets/2_MDPC.png" alt="2_MDPC" style="zoom: 50%;" /> <img src="./assets/2_IDPC-FA.png" alt="2_IDPC-FA" style="zoom: 50%;" />
-
-​                                          (a) MDPC                                                                               (b) IDPC-FA
-
-<img src="./assets/2_DPCSA.png" alt="2_DPCSA" style="zoom: 50%;" /> <img src="./assets/2_FNDPC.png" alt="2_FNDPC" style="zoom: 50%;" />
-
-​                                          (c) DPCSA                                                                                (d) FNDPC
-
-<img src="./assets/2_FKNN-DPC.png" alt="2_FKNN-DPC" style="zoom: 50%;" /> <img src="./assets/2_DPC.png" alt="2_DPC" style="zoom: 50%;" />
-
-​                                     (e) FKNN-DPC                                                                                (f) DPC
+<img src="./assets/2_MDPC.png" alt="2_MDPC" style="zoom: 50%;" /> 
+(a) MDPC
+<img src="./assets/2_IDPC-FA.png" alt="2_IDPC-FA" style="zoom: 50%;" />
+(b) IDPC-FA
+<img src="./assets/2_DPCSA.png" alt="2_DPCSA" style="zoom: 50%;" /> 
+(c) DPCSA                                                                                
+<img src="./assets/2_FNDPC.png" alt="2_FNDPC" style="zoom: 50%;" />
+(d) FNDPC
+<img src="./assets/2_FKNN-DPC.png" alt="2_FKNN-DPC" style="zoom: 50%;" /> 
+(e) FKNN-DPC                                                                                
+<img src="./assets/2_DPC.png" alt="2_DPC" style="zoom: 50%;" />
+(f) DPC
 
 ​                                                             图2 6种算法在Cmc数据集上的聚类结果
 
@@ -117,17 +117,18 @@
 
 
 
-<img src="./assets/3_MDPC.png" alt="3_MDPC" style="zoom: 50%;" /> <img src="./assets/3_IDPC-FA.png" alt="3_IDPC-FA" style="zoom: 50%;" />
-
-​                                          (a) MDPC                                                                               (b) IDPC-FA
-
-<img src="./assets/3_DPCSA.png" alt="3_DPCSA" style="zoom: 50%;" /> <img src="./assets/3_FNDPC.png" alt="3_FNDPC" style="zoom: 50%;" />
-
-​                                          (c) DPCSA                                                                                (d) FNDPC
-
-<img src="./assets/3_FKNN-DPC.png" alt="3_FKNN-DPC" style="zoom: 50%;" /> <img src="./assets/3_DPC.png" alt="3_DPC" style="zoom: 50%;" />
-
-​                                     (e) FKNN-DPC                                                                                (f) DPC
+<img src="./assets/3_MDPC.png" alt="3_MDPC" style="zoom: 50%;" /> 
+(a) MDPC
+<img src="./assets/3_IDPC-FA.png" alt="3_IDPC-FA" style="zoom: 50%;" />
+(b) IDPC-FA
+<img src="./assets/3_DPCSA.png" alt="3_DPCSA" style="zoom: 50%;" /> 
+(c) DPCSA 
+<img src="./assets/3_FNDPC.png" alt="3_FNDPC" style="zoom: 50%;" />
+(d) FNDPC
+<img src="./assets/3_FKNN-DPC.png" alt="3_FKNN-DPC" style="zoom: 50%;" /> 
+(e) FKNN-DPC 
+​<img src="./assets/3_DPC.png" alt="3_DPC" style="zoom: 50%;" />                                                                                                                    
+(f) DPC
 
 ​                                                             图3 6种算法在Jain数据集上的聚类结果
 
@@ -135,17 +136,18 @@
 
 
 
-<img src="./assets/4_MDPC.png" alt="4_MDPC" style="zoom: 50%;" /> <img src="./assets/4_IDPC-FA.png" alt="4_IDPC-FA" style="zoom: 50%;" />
-
-​                                          (a) MDPC                                                                               (b) IDPC-FA
-
-<img src="./assets/4_DPCSA.png" alt="4_DPCSA" style="zoom: 50%;" /> <img src="./assets/4_FNDPC.png" alt="4_FNDPC" style="zoom: 50%;" />
-
-​                                          (c) DPCSA                                                                                (d) FNDPC
-
-<img src="./assets/4_FKNN-DPC.png" alt="4_FKNN-DPC" style="zoom: 50%;" /> <img src="./assets/4_DPC.png" alt="4_DPC" style="zoom: 50%;" />
-
-​                                     (e) FKNN-DPC                                                                                (f) DPC
+<img src="./assets/4_MDPC.png" alt="4_MDPC" style="zoom: 50%;" /> 
+(a) MDPC                                                                               
+<img src="./assets/4_IDPC-FA.png" alt="4_IDPC-FA" style="zoom: 50%;" />
+(b) IDPC-FA
+<img src="./assets/4_DPCSA.png" alt="4_DPCSA" style="zoom: 50%;" />
+(c) DPCSA
+<img src="./assets/4_FNDPC.png" alt="4_FNDPC" style="zoom: 50%;" />
+(d) FNDPC
+<img src="./assets/4_FKNN-DPC.png" alt="4_FKNN-DPC" style="zoom: 50%;" /> 
+(e) FKNN-DPC
+<img src="./assets/4_DPC.png" alt="4_DPC" style="zoom: 50%;" />                                                                                
+(f) DPC
 
 ​                                                             图4 6种算法在Circle数据集上的聚类结果
 
@@ -153,17 +155,18 @@
 
 
 
-<img src="./assets/5_MDPC.png" alt="5_MDPC" style="zoom: 50%;" /> <img src="./assets/5_IDPC-FA.png" alt="5_IDPC-FA" style="zoom: 50%;" />
-
-​                                          (a) MDPC                                                                               (b) IDPC-FA
-
-<img src="./assets/5_DPCSA.png" alt="5_DPCSA" style="zoom: 50%;" /> <img src="./assets/5_FNDPC.png" alt="5_FNDPC" style="zoom: 50%;" />
-
-​                                          (c) DPCSA                                                                                (d) FNDPC
-
-<img src="./assets/5_FKNN-DPC.png" alt="5_FKNN-DPC" style="zoom: 50%;" /> <img src="./assets/5_DPC.png" alt="5_DPC" style="zoom: 50%;" />
-
-​                                     (e) FKNN-DPC                                                                                (f) DPC
+<img src="./assets/5_MDPC.png" alt="5_MDPC" style="zoom: 50%;" /> 
+(a) MDPC                                                                               
+<img src="./assets/5_IDPC-FA.png" alt="5_IDPC-FA" style="zoom: 50%;" />
+(b) IDPC-FA
+<img src="./assets/5_DPCSA.png" alt="5_DPCSA" style="zoom: 50%;" /> 
+(c) DPCSA
+<img src="./assets/5_FNDPC.png" alt="5_FNDPC" style="zoom: 50%;" />
+(d) FNDPC
+<img src="./assets/5_FKNN-DPC.png" alt="5_FKNN-DPC" style="zoom: 50%;" /> 
+(e) FKNN-DPC                                                                                
+<img src="./assets/5_DPC.png" alt="5_DPC" style="zoom: 50%;" />
+(f) DPC
 
 ​                                                             图5 6种算法在Pathbased数据集上的聚类结果
 
