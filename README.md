@@ -204,7 +204,7 @@
 ## 真实数据集的实验结果
 
 ​		为了进一步证明MDPC的可用性，使用MDPC算法与IDPC-FA、DPCSA、FNDPC、FKNN-DPC、DPC算法对UCI中8个真实数据集Ecoli、Ionosphere、Iris、Libras、Seeds、Segmentation、Wdbc、Wine进行聚类，这些数据集的信息可以从表2得知。聚类效果如表4所示。
-
+<div align="center">
 ​                                                         表4 6种算法在UCI中8个真实数据集的聚类效果比较
 
 | Algorithms | AMI        | ARI        | FMI        | Arg- | Algorithms | AMI          | ARI        | FMI        | Arg- |
@@ -238,12 +238,12 @@
 | FKNN-DPC   | 0.5554     | 0.3459     | 0.4044     | 10   | FKNN-DPC   | 0.8481       | **0.8839** | **0.9229** | 8    |
 | DPC        | 0.5358     | 0.3193     | 0.3717     | 0.3  | DPC        | 0.7065       | 0.5024     | 0.7835     | 2    |
 
-
+</div>
 
 ## 其他数据集的实验结果
 
 ​		使用MDPC算法与IDPC-FA、DPCSA、FNDPC、FKNN-DPC、DPC算法对4个较大规模的复杂数据集进行聚类。表5是这个数据集的基本信息。
-
+<div align="center">
 ​                                                                                  表5 复杂数据集
 
 | 数据集   | 样本数 | 维度 | 簇数 |
@@ -271,6 +271,7 @@
 | FNDPC      | 0.7564   | 0.6898 | 0.7808 | 0.37 | FNDPC      | **1**  | **1**  | **1**  | 0.13 |
 | FKNN-DPC   | 0.8719   | 0.8179 | 0.8735 | 48   | FKNN-DPC   | 0.2807 | 0.0982 | 0.5620 | 10   |
 | DPC        | 0.7665   | 0.6894 | 0.7779 | 0.9  | DPC        | 0.5225 | 0.5456 | 0.7862 | 3.8  |
+</div>
 
 从表6可以看出MDPC算法在4种复杂数据集中均进行了完美聚类，再次证明其的可用性。
 
