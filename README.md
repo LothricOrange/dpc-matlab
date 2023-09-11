@@ -79,17 +79,16 @@
 
 
 
-<img src="./assets/1_MDPC.png" alt="1_MDPC" style="zoom: 50%;" /> <img src="./assets/1_IDPC-FA.png" alt="1_IDPC-FA" style="zoom: 50%;" />
+<img src="./assets/1_MDPC.png" alt="1_MDPC" style="zoom: 50%;" /> (a) MDPC <img src="./assets/1_IDPC-FA.png" alt="1_IDPC-FA" style="zoom: 50%;" /> (b) IDPC-FA
 
-​                                          (a) MDPC                                                                               (b) IDPC-FA
+​                                                                                                                         
+<img src="./assets/1_DPCSA.png" alt="1_DPCSA" style="zoom: 50%;" /> (c) DPCSA <img src="./assets/1_FNDPC.png" alt="1_FNDPC" style="zoom: 50%;" /> (d) FNDPC
 
-<img src="./assets/1_DPCSA.png" alt="1_DPCSA" style="zoom: 50%;" /> <img src="./assets/1_FNDPC.png" alt="1_FNDPC" style="zoom: 50%;" />
+​                                                                                                                         
 
-​                                          (c) DPCSA                                                                                (d) FNDPC
+<img src="./assets/1_FKNN-DPC.png" alt="1_FKNN-DPC" style="zoom: 50%;" /> (e) FKNN-DPC <img src="./assets/1_DPC.png" alt="1_DPC" style="zoom: 50%;" /> (f) DPC
 
-<img src="./assets/1_FKNN-DPC.png" alt="1_FKNN-DPC" style="zoom: 50%;" /> <img src="./assets/1_DPC.png" alt="1_DPC" style="zoom: 50%;" />
-
-​                                     (e) FKNN-DPC                                                                                (f) DPC
+​                                                                                                                     
 
 ​                                                              图1 6种算法在Db数据集上的聚类结果
 
